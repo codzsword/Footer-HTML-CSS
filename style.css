@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-custom {
+    padding: 20px 0;
+    background-color: #000;
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-section {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.footer-content {
+    padding: 0 10px;
+}
+
+.footer-about {
+    margin-bottom: 1rem;
+}
+
+.footer-logo img {
+    margin-bottom: 10px;
+    height: 75px;
+}
+
+.social-item {
+    display: inline-block;
+}
+
+.social-item:not(:last-child) {
+    margin-right: .5rem;
+}
+
+.social-item a {
+    width: 50px;
+    height: 50px;
+    color: #FFF;
+    border-radius: 100%;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+}
+
+footer h4 {
+    position: relative;
+    line-height: 1;
+    padding-bottom: 20px;
+    font-size: 24px;
+    margin: 1rem 0 1.615rem 0;
+    color: #FFF;
+}
+
+.footer-content h4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #0d5ef4;
+}
+
+.footer-nav li a {
+    color: #FFF;
+    line-height: 2rem;
+    font-size: 18px;
+}
+
+.footer-contact li {
+    display: flex;
+    align-items: start;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+.footer-contact li i {
+    margin-top: 5px;
+    font-size: 24px;
+    color: #FFF;
+    margin-right: 10px;
+}
+
+.footer-contact li span {
+    font-size: 18px;
+}
+
+.footer-copyright {
+    background-color: #1a1a1a;
+}
+
+.copyright {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Responsive Layout */
+
+@media (min-width:992px) {
+
+    .footer-section {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+}
